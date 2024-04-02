@@ -1,0 +1,81 @@
+.header {
+	height: 100vh;
+	background: linear-gradient(45deg,#3282a6, #ff6b6b, #0000ff);
+	background-size: 400% 400%;
+	animation: animate 3s infinite alternate;
+}
+.navbar{
+	background: transparent !important;
+}
+.navbar-brand{
+	color: #fff;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 30px;
+}
+.navbar-brand:focus, 
+.navbar-brand:hover {
+	color: #fff !important;
+}
+.nav-link{
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+}
+.carousel-item {
+	margin-top: 20%;
+}
+.carousel-item h1{
+    font-size: 7em;
+	color: #fff;
+  font-family: bebas neue;
+}
+.carousel-item p{
+	font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: montserrat;
+  padding: 0 25%;
+  line-height: 1.5;
+}
+@keyframes animate {
+	0% {
+		background-position: 0% 50%; 
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+    
+.navbar-nav {
+	background: #fff;
+}
+.nav-link{
+	color: #262626;
+}
+.carousel-item {
+	margin-top: 50%;
+}
+.carousel-item p {
+	padding: 0 10%;
+}
+}
+
+@media (max-width: 767px){
+	.navbar-nav {
+		background: #fff;
+	}
+	.nav-link{
+		color: #262626;
+	}
+	.carousel-item {
+		margin-top: 45%;
+	}
+	.carousel-item h1 {
+		font-size: 40px;
+	}
+	.carousel-item p {
+		font-size: 1em;
+		padding: 0 2%;
+	}
+}
